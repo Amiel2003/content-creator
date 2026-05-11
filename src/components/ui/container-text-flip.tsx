@@ -19,7 +19,7 @@ export interface ContainerTextFlipProps {
 }
 
 export function ContainerTextFlip({
-  words = ["Laravel", "ReactJS", "NextJS", "PHP", "Javascript", "Typescript", "Python", 'Wordpress'],
+  words = ["Veo 3.1", "Nano Banana Pro", "Kling 3.0", "Seedance 2.0"],
   interval = 3000,
   className,
   textClassName,

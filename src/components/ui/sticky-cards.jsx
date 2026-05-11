@@ -16,7 +16,7 @@ const stickyCardsData = [
         type: "intro",
         title: "skills/services.",
         description: "Offering a range of creative and technical solutions to bring ideas to life.",
-        highlight: ["creative", "technicak", "solutions"],
+        highlight: ["creative", "technical", "solutions"],
     },
     {
         type: "service",

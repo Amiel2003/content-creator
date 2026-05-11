@@ -74,7 +74,8 @@ export function HeroSection() {
                             }`}
                     >
                         <AnimatedShinyText>
-                            Web Developer / Designer
+                            AI Content Creator //
+                            Video Editor
                         </AnimatedShinyText>
                     </div>
                     <div className={`flex gap-4 py-3 px-4 transition-all duration-1000 ease-out delay-700 ${isVisible

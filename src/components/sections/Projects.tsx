@@ -16,6 +16,7 @@ type Project = {
     title: string;
     cover: string[];
     colors: string[];
+    paths: string[];
     logo: React.FC<React.SVGProps<SVGSVGElement>> | string;
     link: {
         link: string,
@@ -23,23 +24,24 @@ type Project = {
         hasSite: boolean,
         hasSource: boolean,
     };
+    videos: string[];
     date: string;
     type: string;
     description: string;
-    layout: 'default' | 'bento';
+    layout: 'portrait' | 'landscape';
     tags: string[];
 };
 
 const projects: Project[] = [
     {
-        title: 'MATIGDA',
+        title: 'AI SNAP',
         cover: [
-            '/images/matigda/image.webp',
-            '/images/matigda/dashboard.webp',
-            '/images/matigda/yearbooks.webp',
+            '/images/shorts/manny.webp',
+            '/images/shorts/drip.webp',
+            '/images/shorts/bruce.webp',
             '/images/matigda/sidebar.webp',
         ],
-        colors: ['#08090C', '#111111', '#0C1320', '#232326', '#00BC7D'],
+        colors: ['#84745D', '#B99B77', '#D49F4A', '#F5E564', '#F4FE69'],
         logo: MatigdaAppLogo,
         link: {
             link: "https://matigda.com/login",
@@ -47,20 +49,26 @@ const projects: Project[] = [
             hasSite: true,
             hasSource: false,
         },
-        date: "2025",
+        paths: [
+            'https://www.facebook.com/reel/931654693179338',
+            'https://www.facebook.com/reel/902524015992282',
+            'https://www.facebook.com/reel/1654775229194177',
+        ],
+        date: "2026",
         type: "Information System",
-        description: "Co-developed and deployed a comprehensive yearbook management system for Bukidnon State University's official yearbook, Matigda, featuring appointment booking, subscriptions, yearbook onboarding, and payment verification.",
-        layout: "default",
-        tags: ['React', 'Laravel', 'PostgreSQL', 'Tailwind'],
+        videos: ["Manny in Ancient Rome", "Bruce in Ancient Rome", "Drip in Ancient Greece"],
+        description: "Created and directed cinematic AI-generated “what if” videos featuring alternate history scenarios, surreal storytelling, and viral short-form narratives for social media audiences.",
+        layout: "portrait",
+        tags: ['Veo 3.1', 'Nano Banana Pro', 'Kling 3.0', 'Davinci Resolve'],
     },
     {
-        title: 'Dormy',
+        title: 'DIGITAL DUTIES',
         cover: [
-            '/images/dormy/pricing2.webp',
-            '/images/dormy/dashboard.webp',
-            '/images/dormy/tenants.webp',
+            '/images/shorts/taco.webp',
+            '/images/shorts/jelly.webp',
+            '/images/shorts/kebab.webp',
         ],
-        colors: ['#0C2D57', '#FC6736', '#EEEFF2', '#F6F9FF', '#FFFFFF'],
+        colors: ['#32281A', '#E2BF9E', '#242D2D', '#3B150B', '#AEA495'],
         logo: DormyAppLogo,
         link: {
             link: "",
@@ -68,32 +76,17 @@ const projects: Project[] = [
             hasSite: false,
             hasSource: true,
         },
-        date: "2024",
-        type: "Information System",
-        description: "Collaborated on a SaaS multi-tenant platform for universities as a school project, streamlining dorm management with user-role control. Features include managing dorms and rooms, assigning students, and maintaining resident records.",
-        layout: "default",
-        tags: ['Laravel', 'PostgreSQL', 'Tailwind', 'Tenancy'],
-    },
-    {
-        title: 'CrashWatch',
-        cover: [
-            '/images/crashwatch/modal.webp',
-            '/images/crashwatch/dashboard.webp',
-            '/images/crashwatch/device2.webp',
+        date: "2026",
+        paths: [
+            'https://www.youtube.com/shorts/YOqYOQdZMCM',
+            'https://www.youtube.com/shorts/W9_ZV3vOfEE',
+            'https://www.youtube.com/shorts/3tOXpbOMtng',
         ],
-        colors: ['#777979', '#c74b3b', '#eaeaed', '#f8f9fc', '#ffffff'],
-        logo: CrashWatchAppLogo,
-        link: {
-            link: "",
-            source: "https://github.com/Amiel2003/CrashWatch.git",
-            hasSite: false,
-            hasSource: true,
-        },
-        date: "2025",
         type: "Information System",
-        description: "Led the development of a capstone sensor-driven system that integrates accelerometer data, GPS tracking, web technologies, and SMS alerts to detect collisions and abnormal movement patterns for real-time accident detection and location-based notification.",
-        layout: "default",
-        tags: ['IoT', 'Laravel', 'Python', 'Realtime'],
+        videos: ["Tacos in Ottoman Empire", "Invention of Turkish Delight", "Kebab Stall in Stone Age"],
+        description: "Generated AI-assisted images and videos, then edited them into highly engaging short-form cinematic content optimized for audience retention and viral storytelling.",
+        layout: "portrait",
+        tags: ['Veo 3.1', 'Nano Banana Pro', 'Kling 3.0', 'Davinci Resolve'],
     },
 ];
 
@@ -136,7 +129,7 @@ export default function StickyProjects() {
             {/* Sticky Header */}
             <div className="sticky top-0 z-50 bg-accent-foreground text-background py-5 px-6">
                 <h1 className="text-xs md:text-lg font-semibold font-family-ronzino">
-                    // Web Projects
+                    // AI Video Projects
                 </h1>
             </div>
 

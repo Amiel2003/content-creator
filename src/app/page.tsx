@@ -13,9 +13,9 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <IntroSection />
-      <SkillSection />
+      {/* <SkillSection /> */}
       <Works />
-      <BackgroundSection />
+      {/* <BackgroundSection /> */}
       <ContactSection contacts={contacts} />
     </div>
   );
