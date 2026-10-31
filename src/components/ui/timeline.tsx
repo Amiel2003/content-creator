@@ -5,6 +5,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import Link from "next/link";
 
 export interface Experience {
     role: string;
@@ -50,36 +51,24 @@ export default function BasicTimeline({ experiences }: TimeLineProps) {
                     </TimelineSeparator>
 
                     <TimelineContent sx={{ py: 2, mt: -0.5 }} className="text-background">
-                        <div className="inline-flex items-center mt-2 px-2 py-1 rounded-md text-[10px] font-family-jetbrains font-medium text-background bg-white/10 backdrop-blur-md border border-white/20 mb-1">
+                        <div className="inline-flex items-center mt-2 px-2 py-1 rounded-md text-[12px] font-family-jetbrains font-medium text-background bg-white/10 backdrop-blur-md border border-white/20 mb-1">
                             {exp.date}
                         </div>
-                        <div className="font-family-ronzino text-[22px] font-bold tracking-tight">{exp.role}</div>
+                        <div className="font-family-ronzino text-[25px] font-bold tracking-tight">{exp.role}</div>
                         <div className="text-md font-family-ronzino font-light">{exp.company}</div>
-                        <div className="tracking-tight text-sm font-family-ronzino text-gray-400 font-light">{exp.address}</div>
-
-                        {/* Dropdown Button */}
-                        {exp.reference && (
-                            <button
-                                className="
-      mt-2
-      text-[10px] font-medium
-      text-background/70
-      hover:text-background
-      transition-colors duration-200
-      focus:outline-none
-      flex items-center gap-1
-      cursor-pointer
-    "
-                                onClick={() => toggleDropdown(index)}
+                        {exp.link && (
+                            <Link
+                                href={exp.link}
+                                target='blank'
+                                className="tracking-tight text-md font-family-ronzino text-gray-500 font-light"
                             >
-                                {openIndex === index ? 'Hide Reference' : 'Show Reference'}
-                                <span
-                                    className={`ml-1 transition-transform duration-200 ${openIndex === index ? 'rotate-180' : 'rotate-0'
-                                        }`}
-                                >
-                                </span>
-                            </button>
+                                {exp.link}
+                            </Link>
                         )}
+
+                        <div className='tracking-tight text-sm font-family-ronzino text-gray-300 font-light'>
+                            {exp.haveDone[0]}
+                        </div>
 
 
 

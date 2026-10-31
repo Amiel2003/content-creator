@@ -15,7 +15,7 @@ export default function Home() {
       <IntroSection />
       {/* <SkillSection /> */}
       <Works />
-      {/* <BackgroundSection /> */}
+      <BackgroundSection />
       <ContactSection contacts={contacts} />
     </div>
   );

@@ -21,7 +21,7 @@ export function IntroSection() {
             <div className="flex flex-col md:flex-row md:px-27 md:pb-24 px-1 pt-1 gap-4">
                 {/* Button */}
                 <div className="w-full md:w-[50%] flex items-start justify-start order-2 md:order-1">
-                    <Link href="/files/ocier-resume.pdf" target="_blank" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-accent-foreground pl-6 pr-4 font-medium text-background transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] hover:translate-x-[3px] hover:translate-y-[3px] hover:[box-shadow:0px_0px_rgb(82_82_82)] gap-2 font-family-poppins md:text-lg text-xs tracking-tight">
+                    <Link href="/files/content-creator.pdf" target="_blank" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-accent-foreground pl-6 pr-4 font-medium text-background transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] hover:translate-x-[3px] hover:translate-y-[3px] hover:[box-shadow:0px_0px_rgb(82_82_82)] gap-2 font-family-poppins md:text-lg text-xs tracking-tight">
                         <span>Resume</span> <ArrowDown className="size-3 md:size-5" />
                     </Link >
                 </div>

@@ -43,7 +43,7 @@ export default function ContactSection({ contacts }: ContactProps) {
 
                     <div className='flex flex-wrap gap-4 md:gap-7'>
                         {contacts?.map((contact, index) => (
-                            <Link href={contact.link} key={index}>
+                            <Link target='blank' href={contact.link} key={index}>
                                 <div className='flex items-center gap-1' >
                                     {contact.icon == 'facebook' ? <FaFacebookSquare size={contact.size} /> :
                                         contact.icon == 'instagram' ? <FaInstagramSquare size={contact.size} /> :
